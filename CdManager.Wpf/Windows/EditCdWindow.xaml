@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CdManager.Wpf.Windows"
         mc:Ignorable="d"
-        Title="EditCdWindow" Height="450" Width="800">
+        Title="EditCdWindow" Height="450" Width="800"
+        Style="{StaticResource ResourceKey=WindowStyle}">
     <Grid>
 
         <Grid.RowDefinitions>
@@ -15,7 +16,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Margin=" 10 10 0 20">Cd ändern:</TextBlock>
+        <TextBlock Grid.Row="0" Style="{StaticResource ResourceKey=FormCaptionStyle}">Cd ändern:</TextBlock>
 
         <Grid Grid.Row="1" x:Name="gridEdit">
             <Grid.ColumnDefinitions>

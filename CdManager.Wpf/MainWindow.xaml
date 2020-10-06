@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CdManager.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" MinHeight="300" MinWidth="500" x:Name="wdMain">
+        Title="MainWindow" MinHeight="300" MinWidth="500" 
+        Style="{StaticResource ResourceKey=WindowStyle}"
+        x:Name="wdMain">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -13,7 +15,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Grid.Row="0" Margin="10, 10, 10, 20">
+        <TextBlock Grid.Row="0" Style="{StaticResource ResourceKey=FormCaptionStyle}">
             Cd-Sammlung
         </TextBlock>
 
